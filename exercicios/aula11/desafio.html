@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadao</title>
+</head>
+<body>
+    <h1>Sistema de Cidadão</h1>
+    Qual pais voce nasceu: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id="paragrafo">
+
+    </div>
+    <script>
+        function nacionalidade(){
+            var pais = document.querySelector('input#pais')
+            var origem = String(pais.value)
+            var paragrafo = document.querySelector('div#paragrafo')
+            paragrafo.innerHTML = `<p>Legal você nasceu em <strong>${origem}</strong></p>`
+
+            if (origem != 'Brasil'){
+                paragrafo.innerHTML += `<p>Voce é estrangeiro</p>`
+            }else {
+                paragrafo.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
