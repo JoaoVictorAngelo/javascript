@@ -9,13 +9,21 @@
 <body>
     
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     
     <section>
         
         <div>
-
+            <form action="">
+                <label for="numeroEscolhido">Numero:</label>
+                <input type="number" id="numeroEscolhido" name="numeroEscolhido" placeholder="Escolha um numero para ver sua Tabuada">
+                <input type="button" value="Gerar Tabuada" onclick="tabular()">
+                
+                    <ul name="solucao" id="solucao">
+                    </ul>
+                    
+            </form>
         </div>
         <div>
 
