@@ -5,14 +5,14 @@ function tabular() {
     var res = Number()
     var solucao = document.getElementById('solucao')
 
-        // Limpando o resultado anterior
-        solucao.innerHTML = ""
+    // Limpando o resultado anterior
+    solucao.innerHTML = ""
 
 
     // fazendo tabuada
     while (contagem <= 10){
         var res = numeroEscolhido * contagem
-        var listItem = document.createElement('li')
+        var listItem = document.createElement('option')
         listItem.textContent = `${numeroEscolhido} x ${contagem} = ${res}`
         solucao.appendChild(listItem);
         contagem ++
